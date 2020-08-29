@@ -38,6 +38,7 @@
   "dependencies": {
     "cfonts": "^2.8.6",
     "gluegun": "^4.4.0",
+    "password-generator-package": "^1.1.1",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
