@@ -1,0 +1,59 @@
+{
+  "name": "password-generator-cli",
+  "version": "0.0.1",
+  "description": "CLI to generate good passwords",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/password-generator/password-generator-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "generate",
+    "password",
+    "password-generator",
+    "typescript",
+    "security-tools"
+  ],
+  "author": "Mikael Rolim de Aquino <mikarg9@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/password-generator/password-generator-cli/issues"
+  },
+  "homepage": "https://github.com/password-generator/password-generator-cli#readme",
+  "bin": {
+    "password-generator-cli": "bin/password-generator-cli"
+  },
+  "scripts": {
+    "format": "eslint src --ext ts",
+    "dist": "babel src --extensions \".ts\" --out-dir dist --copy-files --no-comments"
+  },
+  "files": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@types/node": "^12.7.11",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "git-cz": "^4.7.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13",
+    "standard": "^14.3.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+dist/
+
+*-lock.json
+*.lock
+*.env
+*.log
+
