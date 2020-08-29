@@ -27,9 +27,19 @@
     "format": "eslint src --ext ts",
     "dist": "babel src --extensions \".ts\" --out-dir dist --copy-files --no-comments"
   },
-  "files": [],
+  "files": [
+    "tsconfig.json",
+    "dist",
+    "LICENSE",
+    "README.md",
+    "bin"
+  ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "cfonts": "^2.8.6",
+    "gluegun": "^4.4.0",
+    "yargs": "^15.4.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
@@ -38,7 +48,9 @@
     "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "@lenne.tech/cli-plugin-helper": "^0.0.8",
     "@types/node": "^12.7.11",
+    "@types/yargs": "^15.0.5",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "commitizen": "^4.2.1",
@@ -49,6 +61,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "find-file-up": "^2.0.1",
     "git-cz": "^4.7.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.13",
