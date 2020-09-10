@@ -17,6 +17,13 @@ const command: GluegunCommand = {
       .alias('init-txt', 'initial-text')
       .describe('initial-text', 'Set string on behind of the password')
 
+      .boolean('pronounceable')
+      .alias('pronunc', 'pronounceable')
+      .describe(
+        'pronounceable',
+        'Creates a password with pronounceable phonetics'
+      )
+
       .boolean('uppercase')
       .alias('upcs', 'uppercase')
       .describe('uppercase', 'Create password with uppercase chars')
@@ -33,8 +40,10 @@ const command: GluegunCommand = {
       .alias('sym', 'symbols')
       .describe('symbols', 'Create password with symbols chars')
 
+      .alias('h', 'help')
+
       .parse()
-  }
+  },
 }
 
 export default command

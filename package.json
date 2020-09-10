@@ -1,6 +1,6 @@
 {
   "name": "password-generator-cli",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "CLI to generate good passwords",
   "private": false,
   "repository": {
@@ -25,7 +25,9 @@
   },
   "scripts": {
     "format": "eslint src --ext ts",
-    "dist": "babel src --extensions \".ts\" --out-dir dist --copy-files --no-comments"
+    "remove-old-dist": "rimraf dist",
+    "compile-dist": "tsc",
+    "dist": "npm run remove-old-dist && npm run compile-dist"
   },
   "files": [
     "tsconfig.json",
@@ -38,15 +40,11 @@
   "dependencies": {
     "cfonts": "^2.8.6",
     "gluegun": "^4.4.0",
-    "password-generator-package": "^1.1.1",
+    "password-generator-package": "latest",
+    "rimraf": "^3.0.2",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.4",
-    "@babel/core": "^7.10.4",
-    "@babel/node": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
     "@lenne.tech/cli-plugin-helper": "^0.0.8",
@@ -57,15 +55,18 @@
     "commitizen": "^4.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "find-file-up": "^2.0.1",
     "git-cz": "^4.7.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.13",
+    "prettier": "^2.1.1",
     "standard": "^14.3.4",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.3"

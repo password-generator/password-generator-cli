@@ -8,8 +8,8 @@ const command: GluegunCommand = {
   run: (toolbox: ExtendedGluegunToolbox) => {
     const {
       showBanner,
-      print,
-      parameters: { options }
+      print: { info, success, error },
+      parameters: { options },
     } = toolbox
 
     showBanner({ text: 'Password-Generator|CLI' })
@@ -18,22 +18,24 @@ const command: GluegunCommand = {
       length: options.length || options.l,
       initialText: options.initialText || options.initTxt,
       cases: {
+        pronounceable: options.pronounceable || options.pronunc,
         uppercase: options.uppercase || options.upcs,
         lowercase: options.lowercase || options.lwcs,
         numbers: options.numbers || options.num,
-        symbols: options.symbols || options.sym
-      }
+        symbols: options.symbols || options.sym,
+      },
     }
 
     try {
       const password = generatePassword(preferences)
 
-      print.success('Password generated with success!')
-      print.info(password)
-    } catch (error) {
-      print.error(error)
+      success('Password generated with success!')
+      info(password)
+    } catch (e) {
+      error(`ERROR: ${e.message}!`)
+      info('Try use --help flag for more informations\n')
     }
-  }
+  },
 }
 
 export default command
