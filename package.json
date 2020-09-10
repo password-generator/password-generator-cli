@@ -1,6 +1,6 @@
 {
   "name": "password-generator-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI to generate good passwords",
   "private": false,
   "repository": {
@@ -40,7 +40,7 @@
   "dependencies": {
     "cfonts": "^2.8.6",
     "gluegun": "^4.4.0",
-    "password-generator-package": "^1.1.1",
+    "password-generator-package": "latest",
     "rimraf": "^3.0.2",
     "yargs": "^15.4.1"
   },
