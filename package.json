@@ -1,6 +1,6 @@
 {
   "name": "@password-generator/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to generate good passwords",
   "private": false,
   "repository": {
@@ -38,6 +38,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@password-generator/package": "^2.1.0",
     "cfonts": "^2.8.6",
     "gluegun": "^4.4.0",
     "password-generator-package": "^1.3.5",

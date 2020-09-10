@@ -1,4 +1,4 @@
-import { generatePassword, Preferences } from 'password-generator-package'
+import { generatePassword, Preferences } from '@password-generator/package'
 
 import { GluegunCommand } from 'gluegun'
 import ExtendedGluegunToolbox from 'src/interfaces/extended-gluegun-toolbox'
@@ -17,7 +17,7 @@ const command: GluegunCommand = {
     const preferences: Preferences = {
       length: options.length || options.l,
       initialText: options.initialText || options.initTxt,
-      cases: {
+      useChars: {
         pronounceable: options.pronounceable || options.pronunc,
         uppercase: options.uppercase || options.upcs,
         lowercase: options.lowercase || options.lwcs,
