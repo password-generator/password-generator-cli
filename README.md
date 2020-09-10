@@ -1,6 +1,6 @@
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/password-generator/password-generator-cli)
 
-[![NPM Version](https://img.shields.io/npm/v/password-generator-cli.svg?style=flat-square)](https://www.npmjs.com/package/password-generator-cli) [![NPM Monthly Downloads](https://img.shields.io/npm/dm/password-generator-cli.svg?style=flat-square)](https://npmjs.org/package/password-generator-cli)
+[![NPM Version](https://img.shields.io/npm/v/@password-generator/cli.svg?style=flat-square)](https://www.npmjs.com/package/@password-generator/cli) [![NPM Monthly Downloads](https://img.shields.io/npm/dm/@password-generator/cli.svg?style=flat-square)](https://npmjs.org/package/@password-generator/cli)
 
 [![License](https://img.shields.io/github/license/password-generator/password-generator-cli?style=flat-square)](LICENSE.md) [![Last Commit](https://img.shields.io/github/last-commit/password-generator/password-generator-cli?style=flat-square)](https://github.com/password-generator/password-generator-cli/commits/) ![Language Most Used](https://img.shields.io/github/languages/top/password-generator/password-generator-cli?style=flat-square) [![Implementations](https://img.shields.io/badge/%F0%9F%92%A1-implementations-8C8E93.svg?style=flat-square)](https://github.com/password-generator/password-generator-cli/issues) ![Repository Size](https://img.shields.io/github/repo-size/password-generator/password-generator-cli?style=flat-square)
 
@@ -40,11 +40,11 @@ See also [password-generator-web](https://github.com/password-generator/password
 #### 🌐 Online
 
 ```sh
-npx password-generator-cli
+npx @password-generator/cli
 ```
 or using yarn v2-beta
 ```sh
-yarn dlx password-generator-cli
+yarn dlx @password-generator/cli
 ```
 
 [Back To The Top](#title)
